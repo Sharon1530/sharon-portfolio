@@ -2,22 +2,41 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sharon Bruce – iOS Developer</title>
   <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <style>
+    body {
+      background-color: #F5F5DC;
+      color: #3B2F2F;
+      font-family: 'Inter', sans-serif;
+    }
+    .card {
+      background-color: #FFF5E1;
+    }
+    .btn {
+      background-color: #A0522D;
+      color: white;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #6B4226;
+    }
+  </style>
 </head>
-<body class="bg-gray-900 text-white font-mono">
+<body>
   <!-- Hero -->
-  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4">
+  <section class="min-h-screen flex flex-col justify-center items-center text-center px-4" data-aos="fade-up">
     <h1 class="text-4xl md:text-6xl font-bold mb-4">Hi, I’m Sharon 👩‍💻</h1>
-    <p class="text-xl md:text-2xl mb-6 text-gray-400">iOS Developer, SwiftUI Ninja & App Store Adventurer</p>
-    <a href="#projects" class="bg-indigo-500 hover:bg-indigo-600 text-white font-bold py-3 px-6 rounded-full">Explore My Work</a>
+    <p class="text-xl md:text-2xl mb-6 text-[#3B2F2F]">iOS Developer, SwiftUI Ninja & App Store Adventurer</p>
+    <a href="#projects" class="btn font-bold py-3 px-6 rounded-full">Explore My Work</a>
   </section>
 
   <!-- About -->
-  <section class="max-w-4xl mx-auto py-12 px-4">
+  <section class="max-w-4xl mx-auto py-12 px-4" data-aos="fade-right">
     <h2 class="text-3xl font-bold mb-4">About Me</h2>
-    <p class="text-gray-300 text-lg leading-relaxed">
+    <p class="text-lg leading-relaxed">
       I craft native iOS apps that behave like magic and crash like... never (well, almost).
       I led the development of <strong>Artistica</strong> – an app for artists to connect and shine on the App Store.
       Whether it’s SwiftUI, UIKit, Firebase, or figuring out why Xcode just sighed – I’m your dev.
@@ -25,47 +44,47 @@
   </section>
 
   <!-- Experience -->
-  <section class="max-w-4xl mx-auto py-12 px-4">
+  <section class="max-w-4xl mx-auto py-12 px-4" data-aos="fade-left">
     <h2 class="text-3xl font-bold mb-4">Experience</h2>
     <div class="space-y-6">
       <div>
         <h3 class="text-xl font-semibold">📱 iOS Developer – Artistica (2024–2025)</h3>
-        <p class="text-gray-400">Led a team of 4 to build an App Store–published iOS app for artists using SwiftUI and MVVM.</p>
+        <p>Led a team of 4 to build an App Store–published iOS app for artists using SwiftUI and MVVM.</p>
       </div>
       <div>
         <h3 class="text-xl font-semibold">🧪 Intern – Infosys (June–July 2024)</h3>
-        <p class="text-gray-400">Built a Library Management System and earned iOS certification from Apple & Infosys dignitaries.</p>
+        <p>Built a Library Management System and earned iOS certification from Apple & Infosys dignitaries.</p>
       </div>
       <div>
         <h3 class="text-xl font-semibold">🧠 Freelance iOS Dev – AppCake</h3>
-        <p class="text-gray-400">Developed iOS apps from scratch, integrating external APIs and shipping features that actually get used.</p>
+        <p>Developed iOS apps from scratch, integrating external APIs and shipping features that actually get used.</p>
       </div>
     </div>
   </section>
 
   <!-- Projects -->
-  <section id="projects" class="bg-gray-800 py-12 px-4">
+  <section id="projects" class="py-12 px-4" data-aos="zoom-in">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold mb-6">Projects</h2>
       <div class="grid md:grid-cols-2 gap-6">
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
+        <div class="card p-6 rounded-lg shadow-lg">
           <h3 class="text-xl font-semibold">🎨 Artistico</h3>
-          <p class="text-gray-300">A hub for visual artists. Used Swift, Core Data, Firebase & a sprinkle of machine learning.</p>
-          <a href="https://github.com/aadi-aarrllo/Artistico_AppShowcase" class="text-indigo-400 mt-2 inline-block">GitHub Repo →</a>
+          <p>An iOS app for visual artists. Built with Swift, Core Data, Firebase & a dash of machine learning.</p>
+          <a href="https://github.com/aadi-aarrllo/Artistico_AppShowcase" class="text-[#8B4513] mt-2 inline-block">GitHub Repo →</a>
         </div>
-        <div class="bg-gray-700 p-6 rounded-lg shadow-lg">
-          <h3 class="text-xl font-semibold">🌧 Rainfall Prediction</h3>
-          <p class="text-gray-300">Python + Random Forest = a weather predictor better than your weatherman.</p>
-          <a href="https://github.com/Sharon1530/Rainfall_Prediction" class="text-indigo-400 mt-2 inline-block">GitHub Repo →</a>
+        <div class="card p-6 rounded-lg shadow-lg">
+          <h3 class="text-xl font-semibold">☔ Rainfall Prediction</h3>
+          <p>Python + Random Forest = a weather predictor better than your weatherman.</p>
+          <a href="https://github.com/Sharon1530/Rainfall_Prediction" class="text-[#8B4513] mt-2 inline-block">GitHub Repo →</a>
         </div>
       </div>
     </div>
   </section>
 
   <!-- Skills -->
-  <section class="max-w-4xl mx-auto py-12 px-4">
+  <section class="max-w-4xl mx-auto py-12 px-4" data-aos="fade-up">
     <h2 class="text-3xl font-bold mb-4">Tech Stack</h2>
-    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4 text-gray-300">
+    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
       <li>Swift</li>
       <li>SwiftUI</li>
       <li>UIKit</li>
@@ -80,25 +99,30 @@
   </section>
 
   <!-- Certifications -->
-  <section class="bg-gray-800 py-12 px-4">
+  <section class="py-12 px-4" data-aos="fade-right">
     <div class="max-w-4xl mx-auto">
       <h2 class="text-3xl font-bold mb-4">Certifications</h2>
-      <ul class="text-gray-300 space-y-2">
+      <ul class="space-y-2">
         <li>🍎 iOS Student Developer Program – iOS Bootcamp</li>
         <li>🤖 UiPath Academy – RPA Development</li>
         <li>📊 Red Hat – Data Science</li>
-        <li>🧭 Celonis – Process Mining</li>
+        <li>🔭 Celonis – Process Mining</li>
       </ul>
     </div>
   </section>
 
   <!-- Contact -->
-  <section class="max-w-4xl mx-auto py-12 px-4 text-center">
+  <section class="max-w-4xl mx-auto py-12 px-4 text-center" data-aos="zoom-in">
     <h2 class="text-3xl font-bold mb-4">Let’s Talk</h2>
-    <p class="text-gray-400 mb-6">Need an app built? Or just want to talk about Swift enums vs structs?</p>
-    <p class="text-lg">📧 <a href="mailto:brucesharon299@gmail.com" class="text-indigo-400">brucesharon299@gmail.com</a></p>
-    <p class="text-lg">🐙 <a href="https://github.com/Sharon1530" class="text-indigo-400">GitHub: Sharon1530</a></p>
-    <p class="text-lg">💼 <a href="https://linkedin.com/in/sharon-bruce-35112224b" class="text-indigo-400">LinkedIn</a></p>
+    <p class="mb-6">Need an app built? Or just want to talk about Swift enums vs structs?</p>
+    <p class="text-lg">📧 <a href="mailto:brucesharon299@gmail.com" class="text-[#8B4513]">brucesharon299@gmail.com</a></p>
+    <p class="text-lg">👨‍💼 <a href="https://linkedin.com/in/sharon-bruce-35112224b" class="text-[#8B4513]">LinkedIn</a></p>
+    <p class="text-lg">🐛 <a href="https://github.com/Sharon1530" class="text-[#8B4513]">GitHub: Sharon1530</a></p>
   </section>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+  </script>
 </body>
 </html>
