@@ -140,7 +140,7 @@
     }
   </style>
 </head>
-<body data-theme="light" class="scroll-smooth">
+<body data-theme="light" class="scroll-smooth overflow-x-hidden h-screen snap-y snap-mandatory">
   <div class="animated-bg">
     <div class="circle"></div>
     <div class="circle"></div>
@@ -151,109 +151,86 @@
     <span id="moon">🌙</span>
   </div>
 
-  <div class="signature-banner">
-    “Storyteller. App Developer. Problem Solver.”
-    <span>— Sharon Bruce</span>
+  <!-- Page 1: Signature Banner -->
+  <div class="signature-banner snap-start h-screen flex flex-col justify-center items-center text-center">
+    <div>
+      <p class="text-2xl md:text-3xl font-semibold italic">
+        “Storyteller. App Developer. Problem Solver.”
+      </p>
+      <span class="block mt-4 text-lg md:text-xl">&mdash; Sharon Bruce</span>
+    </div>
   </div>
 
-  <!-- Hero Section -->
-  <section class="text-center px-6 mb-20" data-aos="fade-up">
+  <!-- Page 2: Hero Section -->
+  <section class="snap-start h-screen flex flex-col justify-center items-center text-center px-6" data-aos="fade-up">
     <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I’m Sharon 👩🏻‍💻</h1>
-    <p class="text-xl mb-6 max-w-2xl mx-auto">iOS Developer crafting intuitive, aesthetic apps with SwiftUI, Firebase & a sprinkle of obsession.</p>
+    <p class="text-xl max-w-2xl mb-6">iOS Developer crafting intuitive, aesthetic apps with SwiftUI, Firebase & a sprinkle of obsession.</p>
     <a href="#projects" class="btn px-6 py-3 inline-block">Explore My Work</a>
   </section>
 
-  <hr class="my-16 border-t-2 border-[#8B4513] w-1/3 mx-auto opacity-20" />
-
-  <!-- About Section -->
-  <section class="max-w-4xl mx-auto px-4 mb-20" data-aos="fade-right">
-    <h2 class="section-header text-3xl font-bold text-center mb-6">🦉 About Me</h2>
-    <p class="text-lg leading-relaxed text-center">
-      I build experiences that feel as natural as native. Currently engineering beautiful SwiftUI apps, blending design & performance with a healthy dislike for unnecessary complexity.
-      My most proud moment? When the App Store said "Published". That app: <strong>Artistica</strong>.
-    </p>
+  <!-- Page 3: About Me -->
+  <section class="snap-start h-screen flex flex-col justify-center items-center px-4 text-center" data-aos="fade-right">
+    <div class="max-w-3xl">
+      <h2 class="text-3xl font-bold mb-6">🦉 About Me</h2>
+      <p class="text-lg leading-relaxed">
+        I build experiences that feel as natural as native. Currently engineering beautiful SwiftUI apps, blending design & performance with a healthy dislike for unnecessary complexity. <br />
+        My proudest moment? When the App Store said "Published". That app: <strong>Artistica</strong>.
+      </p>
+    </div>
   </section>
 
-  <hr class="my-16 border-t-2 border-[#8B4513] w-1/3 mx-auto opacity-20" />
-
-  <!-- Experience Section -->
-  <section class="max-w-4xl mx-auto px-4 mb-20" data-aos="fade-left">
-    <h2 class="section-header text-3xl font-bold text-center mb-6">🛠 Experience</h2>
-    <div class="space-y-6">
-      <div class="card transform transition-transform duration-300 hover:scale-105" data-aos="fade-up">
-        <h3 class="text-xl font-semibold">📱 iOS Developer – Artistica (2024–2025)</h3>
-        <p>Led a team to launch a community app for artists using SwiftUI, Firebase, and Core Data. Live on the App Store.</p>
-      </div>
-      <div class="card transform transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="100">
-        <h3 class="text-xl font-semibold">🏛️ Intern – Infosys (June–July 2024)</h3>
-        <p>Created a Library Management System and earned iOS dev recognition from Apple & Infosys leads.</p>
-      </div>
-      <div class="card transform transition-transform duration-300 hover:scale-105" data-aos="fade-up" data-aos-delay="200">
-        <h3 class="text-xl font-semibold">🧠 Freelance iOS Developer – AppCake</h3>
-        <p>Developed multiple iOS tools from scratch. Integrated APIs, shipped fast, and made users smile.</p>
+  <!-- Page 4: Experience -->
+  <section class="snap-start h-screen flex flex-col justify-center items-center px-4 text-left" data-aos="fade-left">
+    <div class="max-w-4xl w-full">
+      <h2 class="text-3xl font-bold text-center mb-10">🛠 Experience</h2>
+      <div class="space-y-6">
+        <div class="card transform transition-transform duration-300 hover:scale-105 p-6">
+          <h3 class="text-xl font-semibold">📱 iOS Developer – Artistica (2024–2025)</h3>
+          <p>Led a team to launch a community app for artists using SwiftUI, Firebase, and Core Data. Live on the App Store.</p>
+        </div>
+        <div class="card transform transition-transform duration-300 hover:scale-105 p-6">
+          <h3 class="text-xl font-semibold">🏛️ Intern – Infosys (June–July 2024)</h3>
+          <p>Created a Library Management System and earned iOS dev recognition from Apple & Infosys leads.</p>
+        </div>
+        <div class="card transform transition-transform duration-300 hover:scale-105 p-6">
+          <h3 class="text-xl font-semibold">🧠 Freelance iOS Developer – AppCake</h3>
+          <p>Developed multiple iOS tools from scratch. Integrated APIs, shipped fast, and made users smile.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <hr class="my-16 border-t-2 border-[#8B4513] w-1/3 mx-auto opacity-20" />
-
-  <!-- Projects Section -->
-  <section id="projects" class="max-w-4xl mx-auto px-4 mb-20" data-aos="zoom-in">
-    <h2 class="section-header text-3xl font-bold text-center mb-6">📂 Projects</h2>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="card relative group overflow-hidden">
-        <h3 class="text-xl font-semibold">🎨 Artistico</h3>
-        <p class="mb-2">An iOS app for visual artists. Built with Swift, Firebase, Core Data, and a hint of machine learning magic.</p>
-        <div class="absolute bottom-0 left-0 w-full bg-[#8B4513] text-white text-sm text-center py-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          Featured on the App Store • 4.9⭐ rating
+  <!-- Page 5: Projects -->
+  <section id="projects" class="snap-start h-screen flex flex-col justify-center items-center px-4 text-left" data-aos="zoom-in">
+    <div class="max-w-4xl w-full">
+      <h2 class="text-3xl font-bold text-center mb-10">🗂️ Projects</h2>
+      <div class="grid md:grid-cols-2 gap-6">
+        <div class="card relative group overflow-hidden p-6">
+          <h3 class="text-xl font-semibold">🎨 Artistico</h3>
+          <p class="mb-2">An iOS app for visual artists. Built with Swift, Firebase, Core Data, and a hint of machine learning magic.</p>
+          <div class="absolute bottom-0 left-0 w-full bg-[#8B4513] text-white text-sm text-center py-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            Featured on the App Store • 4.9⭐ rating
+          </div>
+          <a href="https://github.com/aadi-aarrllo/Artistico_AppShowcase" class="text-[#8B4513] block mt-2">GitHub →</a>
+          <a href="https://lnkd.in/gPtcPe6Q" class="text-[#8B4513] block">App Store →</a>
         </div>
-        <a href="https://github.com/aadi-aarrllo/Artistico_AppShowcase" class="text-[#8B4513] block mt-2">GitHub →</a>
-        <a href="https://lnkd.in/gPtcPe6Q" class="text-[#8B4513] block">App Store →</a>
-      </div>
-      <div class="card relative group overflow-hidden">
-        <h3 class="text-xl font-semibold">📊 Rainfall Prediction</h3>
-        <p class="mb-2">Python + Random Forest = better forecasts. Used real data to train a rainfall predictor.</p>
-        <div class="absolute bottom-0 left-0 w-full bg-[#8B4513] text-white text-sm text-center py-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
-          Accuracy: 93% • Built with Scikit-Learn
+        <div class="card relative group overflow-hidden p-6">
+          <h3 class="text-xl font-semibold">📊 Rainfall Prediction</h3>
+          <p class="mb-2">Python + Random Forest = better forecasts. Used real data to train a rainfall predictor.</p>
+          <div class="absolute bottom-0 left-0 w-full bg-[#8B4513] text-white text-sm text-center py-2 transform translate-y-full group-hover:translate-y-0 transition-transform duration-300">
+            Accuracy: 93% • Built with Scikit-Learn
+          </div>
+          <a href="https://github.com/Sharon1530/Rainfall_Prediction" class="text-[#8B4513] block mt-2">GitHub →</a>
         </div>
-        <a href="https://github.com/Sharon1530/Rainfall_Prediction" class="text-[#8B4513] block mt-2">GitHub →</a>
       </div>
     </div>
   </section>
 
-  <hr class="my-16 border-t-2 border-[#8B4513] w-1/3 mx-auto opacity-20" />
-
-  <!-- Contact Info -->
-  <section class="max-w-4xl mx-auto px-4 text-center mb-20" data-aos="fade-up">
-    <h2 class="section-header text-3xl font-bold mb-6">📮 Let's Connect</h2>
+  <!-- Page 6: Contact -->
+  <section class="snap-start h-screen flex flex-col justify-center items-center text-center px-6" data-aos="fade-up">
+    <h2 class="text-3xl font-bold mb-6">📮 Let's Connect</h2>
     <p class="mb-4">Have a project or app idea? Or want to geek out over Swift enums vs structs?</p>
     <p>📧 <a href="mailto:brucesharon299@gmail.com" class="text-[#8B4513] underline">brucesharon299@gmail.com</a></p>
-    <p>💼 <a href="https://linkedin.com/in/sharon-bruce-35112224b" class="text-[#8B4513] underline">LinkedIn</a></p>
+    <p>📇 <a href="https://linkedin.com/in/sharon-bruce-35112224b" class="text-[#8B4513] underline">LinkedIn</a></p>
     <p>👾 <a href="https://github.com/Sharon1530" class="text-[#8B4513] underline">GitHub</a></p>
   </section>
-
-  <!-- Scripts -->
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init({ duration: 1000 });
-
-    const sunBtn = document.getElementById("sun");
-    const moonBtn = document.getElementById("moon");
-    const body = document.body;
-    const savedTheme = localStorage.getItem("theme") || "light";
-
-    function applyTheme(theme) {
-      body.setAttribute("data-theme", theme);
-      localStorage.setItem("theme", theme);
-      sunBtn.classList.toggle("active", theme === "light");
-      moonBtn.classList.toggle("active", theme === "dark");
-    }
-
-    sunBtn.addEventListener("click", () => applyTheme("light"));
-    moonBtn.addEventListener("click", () => applyTheme("dark"));
-
-    applyTheme(savedTheme);
-  </script>
-</body>
-</html>
-
