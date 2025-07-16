@@ -8,19 +8,21 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     :root {
-      --bg-color: #E2C8B2;
-      --text-color: #200202;
-      --card-bg: #fff9f3;
-      --btn-bg: #310000;
-      --btn-hover: #420909;
+      --bg-color: #F2E8DC; /* lighter beige */
+      --text-color: #200202; /* deep brown */
+      --text-color-secondary: #311111; /* soft brown */
+      --card-bg: #FAF3EB; /* soft cream */
+      --btn-bg: #4B2E2E; /* richer brown */
+      --btn-hover: #310000; /* darker brown */
     }
 
     [data-theme="dark"] {
-      --bg-color: #200202;
-      --text-color: #E2C8B2;
-      --card-bg: #310000;
-      --btn-bg: #E2C8B2;
-      --btn-hover: #f0d8c0;
+      --bg-color: #120101; /* deepest brown */
+      --text-color: #E2C8B2; /* beige text */
+      --text-color-secondary: #D9BBA0;
+      --card-bg: #2B1A1A; /* very dark brown */
+      --btn-bg: #E2C8B2; /* beige */
+      --btn-hover: #fff3e0; /* pale beige */
     }
 
     body {
@@ -35,7 +37,8 @@
     }
     .btn {
       background-color: var(--btn-bg);
-      color: var(--text-color);
+      color: var(--bg-color);
+      font-weight: 600;
       transition: background-color 0.3s ease;
     }
     .btn:hover {
