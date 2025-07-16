@@ -8,19 +8,19 @@
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <style>
     :root {
-      --bg-color: #F5F5DC; /* beige */
-      --text-color: #3B2F2F; /* dark brown */
-      --card-bg: #FFF5E1; /* soft cream */
-      --btn-bg: #8B4513; /* saddle brown */
-      --btn-hover: #6B4226; /* coffee brown */
+      --bg-color: #E2C8B2;
+      --text-color: #200202;
+      --card-bg: #fff9f3;
+      --btn-bg: #310000;
+      --btn-hover: #420909;
     }
 
     [data-theme="dark"] {
-      --bg-color: #3B2F2F; /* dark brown */
-      --text-color: #F5F5DC; /* beige */
-      --card-bg: #6B4226; /* coffee brown */
-      --btn-bg: #FFF5E1; /* soft cream */
-      --btn-hover: #A0522D; /* sienna */
+      --bg-color: #200202;
+      --text-color: #E2C8B2;
+      --card-bg: #310000;
+      --btn-bg: #E2C8B2;
+      --btn-hover: #f0d8c0;
     }
 
     body {
@@ -59,6 +59,7 @@
       border-radius: 9999px;
       background: transparent;
       color: var(--text-color);
+      transition: background-color 0.3s ease, color 0.3s ease;
     }
     .toggle-theme .active {
       background: var(--btn-hover);
@@ -66,7 +67,7 @@
     }
   </style>
 </head>
-<body data-theme="light">
+<body data-theme="light" class="scroll-smooth">
   <div class="toggle-theme">
     <span id="sun" class="active">☀</span>
     <span id="moon">🌙</span>
@@ -116,7 +117,8 @@
         <div class="card p-6 rounded-lg shadow-lg">
           <h3 class="text-xl font-semibold">🎨 Artistico</h3>
           <p>An iOS app for visual artists. Built with Swift, Core Data, Firebase & a dash of machine learning.</p>
-          <a href="https://github.com/aadi-aarrllo/Artistico_AppShowcase" class="text-[#8B4513] mt-2 inline-block">GitHub Repo →</a>
+          <a href="https://github.com/aadi-aarrllo/Artistico_AppShowcase" class="text-[#8B4513] mt-2 inline-block">GitHub Repo →</a><br>
+          <a href="https://lnkd.in/gPtcPe6Q" class="text-[#8B4513] inline-block mt-1" target="_blank">📱 View on App Store</a>
         </div>
         <div class="card p-6 rounded-lg shadow-lg">
           <h3 class="text-xl font-semibold">☔ Rainfall Prediction</h3>
@@ -127,37 +129,7 @@
     </div>
   </section>
 
-  <!-- Skills -->
-  <section class="max-w-4xl mx-auto py-12 px-4" data-aos="fade-up">
-    <h2 class="text-3xl font-bold mb-4">Tech Stack</h2>
-    <ul class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-4">
-      <li>Swift</li>
-      <li>SwiftUI</li>
-      <li>UIKit</li>
-      <li>Firebase</li>
-      <li>Xcode</li>
-      <li>Python</li>
-      <li>Git/GitHub</li>
-      <li>Core Data</li>
-      <li>HTML/CSS</li>
-      <li>Machine Learning</li>
-    </ul>
-  </section>
-
-  <!-- Certifications -->
-  <section class="py-12 px-4" data-aos="fade-right">
-    <div class="max-w-4xl mx-auto">
-      <h2 class="text-3xl font-bold mb-4">Certifications</h2>
-      <ul class="space-y-2">
-        <li>🍎 iOS Student Developer Program – iOS Bootcamp</li>
-        <li>🤖 UiPath Academy – RPA Development</li>
-        <li>📊 Red Hat – Data Science</li>
-        <li>🔭 Celonis – Process Mining</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- Contact -->
+  <!-- Contact info section -->
   <section class="max-w-4xl mx-auto py-12 px-4 text-center" data-aos="zoom-in">
     <h2 class="text-3xl font-bold mb-4">Let’s Talk</h2>
     <p class="mb-6">Need an app built? Or just want to talk about Swift enums vs structs?</p>
