@@ -155,3 +155,90 @@
     “Storyteller. App Developer. Problem Solver.”
     <span>— Sharon Bruce</span>
   </div>
+
+  <!-- Hero Section -->
+  <section class="text-center px-6" data-aos="fade-up">
+    <h1 class="text-5xl md:text-6xl font-bold mb-4">Hi, I’m Sharon 👩‍💻</h1>
+    <p class="text-xl mb-6 max-w-2xl mx-auto">iOS Developer crafting intuitive, aesthetic apps with SwiftUI, Firebase & a sprinkle of obsession.</p>
+    <a href="#projects" class="btn px-6 py-3 inline-block">Explore My Work</a>
+  </section>
+
+  <!-- About Section -->
+  <section class="max-w-4xl mx-auto px-4" data-aos="fade-right">
+    <h2 class="section-header">About Me</h2>
+    <p class="text-lg leading-relaxed text-center">
+      I build experiences that feel as natural as native. Currently engineering beautiful SwiftUI apps, blending design & performance with a healthy dislike for unnecessary complexity.
+      My most proud moment? When the App Store said "Published". That app: <strong>Artistica</strong>.
+    </p>
+  </section>
+
+  <!-- Experience Section -->
+  <section class="max-w-4xl mx-auto px-4" data-aos="fade-left">
+    <h2 class="section-header">Experience</h2>
+    <div class="space-y-6">
+      <div class="card">
+        <h3 class="text-xl font-semibold">📱 iOS Developer – Artistica (2024–2025)</h3>
+        <p>Led a team to launch a community app for artists using SwiftUI, Firebase, and Core Data. Live on the App Store.</p>
+      </div>
+      <div class="card">
+        <h3 class="text-xl font-semibold">🏠 Intern – Infosys (June–July 2024)</h3>
+        <p>Created a Library Management System and earned iOS dev recognition from Apple & Infosys leads.</p>
+      </div>
+      <div class="card">
+        <h3 class="text-xl font-semibold">🧠 Freelance iOS Developer – AppCake</h3>
+        <p>Developed multiple iOS tools from scratch. Integrated APIs, shipped fast, and made users smile.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="max-w-4xl mx-auto px-4" data-aos="zoom-in">
+    <h2 class="section-header">Projects</h2>
+    <div class="grid md:grid-cols-2 gap-6">
+      <div class="card">
+        <h3 class="text-xl font-semibold">🎨 Artistico</h3>
+        <p class="mb-2">An iOS app for visual artists. Built with Swift, Firebase, Core Data, and a hint of machine learning magic.</p>
+        <a href="https://github.com/aadi-aarrllo/Artistico_AppShowcase" class="text-[#8B4513] block">GitHub →</a>
+        <a href="https://lnkd.in/gPtcPe6Q" class="text-[#8B4513] block">App Store →</a>
+      </div>
+      <div class="card">
+        <h3 class="text-xl font-semibold">📊 Rainfall Prediction</h3>
+        <p class="mb-2">Python + Random Forest = better forecasts. Used real data to train a rainfall predictor.</p>
+        <a href="https://github.com/Sharon1530/Rainfall_Prediction" class="text-[#8B4513] block">GitHub →</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Info -->
+  <section class="max-w-4xl mx-auto px-4 text-center" data-aos="fade-up">
+    <h2 class="section-header">Let's Connect</h2>
+    <p class="mb-4">Have a project or app idea? Or want to geek out over Swift enums vs structs?</p>
+    <p>📧 <a href="mailto:brucesharon299@gmail.com" class="text-[#8B4513] underline">brucesharon299@gmail.com</a></p>
+    <p>💼 <a href="https://linkedin.com/in/sharon-bruce-35112224b" class="text-[#8B4513] underline">LinkedIn</a></p>
+    <p>👾 <a href="https://github.com/Sharon1530" class="text-[#8B4513] underline">GitHub</a></p>
+  </section>
+
+  <!-- Scripts -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({ duration: 1000 });
+
+    const sunBtn = document.getElementById("sun");
+    const moonBtn = document.getElementById("moon");
+    const body = document.body;
+    const savedTheme = localStorage.getItem("theme") || "light";
+
+    function applyTheme(theme) {
+      body.setAttribute("data-theme", theme);
+      localStorage.setItem("theme", theme);
+      sunBtn.classList.toggle("active", theme === "light");
+      moonBtn.classList.toggle("active", theme === "dark");
+    }
+
+    sunBtn.addEventListener("click", () => applyTheme("light"));
+    moonBtn.addEventListener("click", () => applyTheme("dark"));
+
+    applyTheme(savedTheme);
+  </script>
+</body>
+</html>
